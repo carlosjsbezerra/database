@@ -1,7 +1,7 @@
 import {Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn} from "typeorm";
 
 @Entity('classe')
-export class Classe {
+export default class Classe {
 
   @PrimaryGeneratedColumn('uuid')
   id: string;
@@ -12,9 +12,9 @@ export class Classe {
   @Column()
   duration: number;
 
-  @CreateDateColumn()
-  created_At: Date;
+  @CreateDateColumn({ name: 'created_At' })
+  createdAt: Date;
 
-  @UpdateDateColumn()
-  updated_At: Date;
+  @UpdateDateColumn({ name: 'updated_At' })
+  updatedAt: Date;
 }
