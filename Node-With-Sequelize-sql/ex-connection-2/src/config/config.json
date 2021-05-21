@@ -1,0 +1,11 @@
+{
+  "username": "root",
+  "password": "root",
+  "database": "sqlnode",
+  "host": "127.0.0.1",
+  "dialect": "mysql",
+  "define": {
+    "timestamp": true,
+    "underscored": true
+  }
+}
